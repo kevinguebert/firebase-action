@@ -2,6 +2,8 @@
 
 set -e
 
+npm install
+
 firebase use staging
 
 if [ -z "$FIREBASE_TOKEN" ]; then
