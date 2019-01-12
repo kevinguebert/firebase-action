@@ -9,8 +9,10 @@ if [ -z "$FIREBASE_TOKEN" ]; then
     exit 126
 fi
 
-if [ -n "$PROJECT_ID"]; then
-    firebase use $PROJECT_ID
-fi
+# if [ -n "$PROJECT_ID"]; then
+    
+# fi
+
+firebase use $PROJECT_ID
 
 sh -c "firebase $*"
